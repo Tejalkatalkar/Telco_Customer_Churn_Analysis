@@ -3,8 +3,12 @@
 
 This project performs **complete churn analysis** for a telecom company using  
 **Python, Machine Learning, Streamlit, PostgreSQL, and Power BI/Tableau**.
-
 It covers the full data lifecycle — **EDA, data cleaning, modeling, dashboards, database schema design, and deployment**.
+
+🚀 Live Demo: http://192.168.0.102:8504 streamlit_app
+
+Try the live application here:
+👉 
 
 ---
 
