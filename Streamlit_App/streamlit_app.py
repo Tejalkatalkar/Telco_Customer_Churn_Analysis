@@ -107,26 +107,56 @@ st.markdown("""
 st.sidebar.title("🗂 Navigation")
 page = st.sidebar.radio("Go to", ["Home", "Risk Analysis", "Visual Dashboard", "Contact"])
 
-# HELPER FUNCTION
+# # HELPER FUNCTION
+# def load_pickle(path):
+#     if not os.path.exists(path):
+#         st.error(f"❌ Missing file: {path}")
+#         return None
+#     return pickle.load(open(path, "rb"))
+
+# # LOAD MODELS + SCALERS + ENCODERS
+# log_model = load_pickle("models/logistic.pkl")
+# rf_model = load_pickle("models/randomforest.pkl")
+# scaler = load_pickle("models/scaler.pkl")
+
+# encoders = {}
+# if os.path.exists("encoders"):
+#     for f in os.listdir("encoders"):
+#         if f.endswith(".pkl"):
+#             col = f.replace(".pkl", "")
+#             encoders[col] = pickle.load(open(f"encoders/{f}", "rb"))
+# else:
+#     st.error("❌ Encoders folder missing")
+
 def load_pickle(path):
-    if not os.path.exists(path):
-        st.error(f"❌ Missing file: {path}")
+    try:
+        with open(path, "rb") as f:
+            return pickle.load(f)
+    except Exception as e:
+        st.error(f"❌ Error loading {path}: {e}")
         return None
-    return pickle.load(open(path, "rb"))
 
-# LOAD MODELS + SCALERS + ENCODERS
-log_model = load_pickle("models/logistic.pkl")
-rf_model = load_pickle("models/randomforest.pkl")
-scaler = load_pickle("models/scaler.pkl")
+# -------- CORRECT PATHS FOR CODESPACES --------
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
+MODELS_DIR = os.path.join(BASE_DIR, "models")
+ENCODERS_DIR = os.path.join(BASE_DIR, "encoders")
+
+# LOAD MODELS
+log_model = load_pickle(os.path.join(MODELS_DIR, "logistic.pkl"))
+rf_model = load_pickle(os.path.join(MODELS_DIR, "randomforest.pkl"))
+scaler   = load_pickle(os.path.join(MODELS_DIR, "scaler.pkl"))
+
+# LOAD ENCODERS
 encoders = {}
-if os.path.exists("encoders"):
-    for f in os.listdir("encoders"):
+
+if os.path.exists(ENCODERS_DIR):
+    for f in os.listdir(ENCODERS_DIR):
         if f.endswith(".pkl"):
-            col = f.replace(".pkl", "")
-            encoders[col] = pickle.load(open(f"encoders/{f}", "rb"))
+            key = f.replace(".pkl", "")
+            encoders[key] = load_pickle(os.path.join(ENCODERS_DIR, f))
 else:
-    st.error("❌ Encoders folder missing")
+    st.error("❌ Encoders folder missing inside Streamlit_App/")
 
 # HOME PAGE CONTENT
 if page == "Home":
@@ -499,3 +529,4 @@ if page == "Contact":
         except Exception as e:
             st.error("❌ Failed to send message")
             st.error(str(e))
+
