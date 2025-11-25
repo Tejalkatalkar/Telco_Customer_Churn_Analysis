@@ -7,3 +7,4 @@ plotly
 seaborn
 joblib
 psycopg2-binary
+sqlalchemy
