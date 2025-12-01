@@ -6,90 +6,91 @@ The dashboard includes a 4-page structured reporting system along with an advanc
 
 ## 🚀 Future Scope
 
- -Integrate machine learning models for churn prediction.
+ - Integrate machine learning models for churn prediction.
 
- -Add real-time data using Power BI Streaming.
+ - Add real-time data using Power BI Streaming.
 
- -Implement customer segmentation using clustering.
+ - Implement customer segmentation using clustering.
 
- -Apply Row-Level Security (RLS) for controlled access.
+ - Apply Row-Level Security (RLS) for controlled access.
 
- -Publish to Power BI Service with scheduled refresh.
+ - Publish to Power BI Service with scheduled refresh.
 
 ## 🛠️ Tools & Technologies
 
- -Power BI Desktop – Dashboard development
+ - Power BI Desktop – Dashboard development
 
- -Power Query – Data cleaning & transformation
+ - Power Query – Data cleaning & transformation
 
- -DAX – KPIs and advanced measures
+ - DAX – KPIs and advanced measures
 
- -Excel/CSV – Dataset source
+ - Excel/CSV – Dataset source
 
- -Bookmarks & Navigation – Interactive filter pane and pages
+ - Bookmarks & Navigation – Interactive filter pane and pages
 
 📁 Dashboard Structure
+
 🔹Page 1 – Customer Demographics
 
--Provides an overview of customer structure and how churn varies across demographic segments.
+- Provides an overview of customer structure and how churn varies across demographic segments.
 
 🔹Insights provided:
 
- -Gender distribution
+ - Gender distribution
  
- -Senior citizen proportion
+ - Senior citizen proportion
   
- -Partner/Dependent segments
+ - Partner/Dependent segments
 
- -Demographic-wise churn %
+ - Demographic-wise churn %
 
- -Visuals used: Clustered bar charts, donut charts, KPI tiles, etc
+ - Visuals used: Clustered bar charts, donut charts, KPI tiles, etc
 
 🔹 Page 2 – Customer Behavior
 
- -Analyzes behavioral factors influencing churn.
+ - Analyzes behavioral factors influencing churn.
 
- -Insights provided:
+ - Insights provided:
 
- -Contract type vs churn
+ - Contract type vs churn
 
---Billing preferences (Paperless, Monthly/Annual)
+ - Billing preferences (Paperless, Monthly/Annual)
 
- -Payment method vs churn
+ - Payment method vs churn
 
- -Visuals used: Stacked bars, heatmaps, trend lines, matrix table
+ - Visuals used: Stacked bars, heatmaps, trend lines, matrix table
 
 🔹 Page 3 – Tenure Insights
 
- -Shows how customer tenure impacts churn and revenue metrics.
+ - Shows how customer tenure impacts churn and revenue metrics.
 
 Insights provided:
 
- -Tenure vs churn
+ - Tenure vs churn
 
- -Monthly/quarterly churn trends
+ - Monthly/quarterly churn trends
 
- -Total charges vs tenure
+ - Total charges vs tenure
 
- -Monthly charges vs tenure
+ - Monthly charges vs tenure
 
- -Visuals used: Line charts, area plots, scatter charts
+ - Visuals used: Line charts, area plots, scatter charts
 
 🔹 Page 4 – Service Usage
 
- -Compares churn across different service packages.
+ - Compares churn across different service packages.
 
 Insights provided:
 
- -Internet service type impact
+ - Internet service type impact
 
- -Security & backup services
+ - Security & backup services
 
- -Streaming service adoption
+ - Streaming service adoption
 
- -Multi-service usage analysis
+ - Multi-service usage analysis
 
- -Visuals used: Donut charts, heatmaps, grouped bars
+ - Visuals used: Donut charts, heatmaps, grouped bars
 
 ## 📸 Dashboard Screenshots
 
