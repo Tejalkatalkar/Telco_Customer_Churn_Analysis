@@ -97,14 +97,17 @@ Benefits:
 
 Telco-Customer-Churn/
 │
+
 ├── CSV Data/
 │ └── cleaned_telco_data.csv
 │
+
 ├── notebooks/
 │ ├── EDA.ipynb
 │ ├── Data_Cleaning.ipynb
 │ └── Model_Training.ipynb
 │
+
 ├── streamlit_app/
 │ ├── app.py
 │ ├── model.pkl
@@ -116,6 +119,7 @@ Telco-Customer-Churn/
 │ ├── create_tables.sql
 │ └── business_queries.sql
 │
+
 ├── ERD_Diagram.png
 ├── requirements.txt
 └── README.md
