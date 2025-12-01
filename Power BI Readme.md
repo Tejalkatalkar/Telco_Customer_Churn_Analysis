@@ -34,7 +34,7 @@ The dashboard includes a 4-page structured reporting system along with an advanc
 
 - Provides an overview of customer structure and how churn varies across demographic segments.
 
-🔹Insights provided:
+Insights provided:
 
  - Gender distribution
  
