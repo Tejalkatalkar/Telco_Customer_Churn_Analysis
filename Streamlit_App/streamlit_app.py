@@ -374,8 +374,8 @@ if page == "Visual Dashboard":
     # Load CSV
     try:
         df = pd.read_csv(
-            r"https://github.com/Tejalkatalkar/Telco_Customer_Churn_Analysis/blob/main/Streamlit_App/CSV/Cleaned_Cust_data.csv"
-        )
+        "https://raw.githubusercontent.com/Tejalkatalkar/Telco_Customer_Churn_Analysis/main/Streamlit_App/CSV/Cleaned_Cust_data.csv"
+    )
         st.success("CSV Loaded Successfully!")
     except:
         st.error("CSV file path incorrect. Please check the file path.")
@@ -529,6 +529,7 @@ if page == "Contact":
         except Exception as e:
             st.error("❌ Failed to send message")
             st.error(str(e))
+
 
 
 
