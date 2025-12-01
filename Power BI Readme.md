@@ -1,6 +1,4 @@
-📊 Customer Churn Analysis – Power BI Dashboard
-
-## 🔍 End-to-End Business Intelligence Project with Advanced UX, Bookmarks & DAX
+### 📊 Customer Churn Analysis – Power BI Dashboard
 
 This project presents an end-to-end Power BI dashboard built to analyze customer churn behavior using interactive visuals, advanced DAX measures, bookmarks, slicer automation, and modern UI/UX techniques.
 The goal of this project is to help organizations identify churn-driving factors, improve customer retention strategies, and derive meaningful business insights from customer behavior and service usage patterns.
